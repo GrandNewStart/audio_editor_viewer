@@ -3,8 +3,8 @@
 Audio_editor 실행 결과(편집된 오디오)를 MMAE 원본 오디오와 나란히 놓고 비교하는 뷰어다.
 
 ```bash
-.venv/bin/python compare.py runs/val_fixed                  # 브라우저에서 뷰어를 연다
-.venv/bin/python compare.py runs/val_fixed --csv m.csv      # UI 없이 샘플별 지표만 CSV 로
+.venv/bin/python compare.py runs/<experiment_name>                # 브라우저에서 뷰어를 연다
+.venv/bin/python compare.py runs/<experiment_name> --csv m.csv    # UI 없이 샘플별 지표만 CSV 로
 ```
 
 옵션: `--port 8765`, `--no-browser`, `--data <wav/ 가 있는 MMAE 루트>`, `--meta <meta json …>`.
@@ -28,22 +28,20 @@ python3 -m venv .venv
 
 ## 실행 결과 폴더 놓기
 
-뷰어에 넘기는 것은 Audio_editor 의 `src/run.py --exp <이름>` (또는 `src/run_v2.py`) 가 만든
-**실행 폴더 하나**다. 이 폴더는 저장소에 들어 있지 않으므로 GPU 서버에서 직접 가져와야 한다.
+뷰어에 넘기는 것은 Audio_editor 의 `src/run.py --exp <experiment_name>` (또는 `src/run_v2.py`) 가
+만든 **실행 폴더 하나**다. Audio_editor 를 돌린 곳에서 이 폴더를 통째로 가져온다 (`logs/` 는 필요 없다).
 
-**어디에 두나:** 경로는 인자로 넘기므로 어디에 둬도 된다. 정해 두자면 이 폴더 안의 `runs/<실행 이름>/`
+**어디에 두나:** 경로는 인자로 넘기므로 어디에 둬도 된다. 정해 두자면 이 폴더 안의 `runs/<experiment_name>/`
 에 둔다. `runs/` 는 `.gitignore` 에 들어 있어 커밋되지 않는다.
 
 ```bash
-# GPU 서버의 Audio_editor/outputs/val_fixed 를 runs/val_fixed 로 가져오기 (logs/ 는 필요 없다)
-rsync -av --exclude logs/ <user>@<gpu-server>:<Audio_editor 경로>/outputs/val_fixed/ runs/val_fixed/
-.venv/bin/python compare.py runs/val_fixed
+.venv/bin/python compare.py runs/<experiment_name>
 ```
 
 **구조:** `audio/` 만 있으면 된다. 나머지는 있으면 해당 정보가 뷰어에 더 나온다.
 
 ```
-runs/val_fixed/
+runs/<experiment_name>/
 ├── audio/
 │   └── <id>.wav              필수. 편집된 오디오. 파일 이름이 MMAE 샘플 id 다
 ├── predictions.json          선택. audio/<id>.wav 가 없을 때 출력 파일 이름을 찾는 데만 쓴다
@@ -56,7 +54,7 @@ runs/val_fixed/
 
 - `<id>` 는 `69e897fbf1844435bec75ef4` 같은 MMAE 샘플 id 다. 지시문과 루브릭은 이 id 로 `data/meta/` 에서 찾는다.
 - 원본 오디오는 샘플 id 로 `data/MMAE_data` 에서 찾는다. 그래서 `predictions.json` 이나 trace 에 적힌
-  서버의 절대 경로는 상관없다.
+  절대 경로는 상관없다. 다른 기계에서 만든 실행 폴더도 그대로 열린다.
 - 채점 전의 실행이면 `scores/` 없이 열면 된다. 지표와 파형 비교는 그대로 나온다.
 
 ## 뷰어

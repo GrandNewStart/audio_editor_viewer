@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Compare an Audio_editor run's output audio with the original MMAE source audio.
 
-    .venv/bin/python compare.py ../Audio_editor/outputs/val_fixed          # browser viewer
-    .venv/bin/python compare.py ../Audio_editor/outputs/val_fixed --csv m.csv   # metrics only
+    .venv/bin/python compare.py runs/<experiment_name>              # browser viewer
+    .venv/bin/python compare.py runs/<experiment_name> --csv m.csv   # metrics only
 
 The output directory is what `src/run.py --exp` writes:
     audio/<id>.wav            edited audio (required)
