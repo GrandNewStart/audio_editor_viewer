@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio Editor Viewer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="title"><strong id="run-name">…</strong> <span id="run-info" class="muted"></span></div>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Filter id / instruction  ( / )">
+    <select id="f-modality"><option value="">all modalities</option></select>
+    <select id="f-flag">
+      <option value="">all samples</option>
+      <option value="silent">flag: silent</option>
+      <option value="unchanged">flag: unchanged</option>
+      <option value="clipping">flag: clipping</option>
+      <option value="length">flag: length changed</option>
+      <option value="nooutput">no output</option>
+      <option value="em0">EM = 0</option>
+      <option value="em1">EM = 1</option>
+    </select>
+    <select id="sort">
+      <option value="id">sort: id</option>
+      <option value="ifr">sort: IFR ↑</option>
+      <option value="cr">sort: CR ↑</option>
+      <option value="lsd">sort: change (LSD) ↑</option>
+      <option value="lsd-desc">sort: change (LSD) ↓</option>
+      <option value="dur">sort: |Δ duration| ↓</option>
+    </select>
+  </div>
+</header>
+<main>
+  <aside>
+    <div id="list-count" class="muted small"></div>
+    <ul id="list"></ul>
+  </aside>
+  <section id="detail">
+    <p class="muted empty">Select a sample on the left.</p>
+  </section>
+</main>
+<footer class="muted small">
+  <kbd>Space</kbd> play/pause · <kbd>A</kbd>/<kbd>B</kbd> switch to source / output at the same time ·
+  <kbd>←</kbd><kbd>→</kbd> seek 1 s · <kbd>J</kbd>/<kbd>K</kbd> next / previous sample · click a track to seek
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

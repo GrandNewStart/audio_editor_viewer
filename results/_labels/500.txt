@@ -1,0 +1,250 @@
+500|S
+501|S
+502|G
+503|S > C:mix
+504|S > GS > C:mix
+505|S > D:reverb > C:distortion > C:mix
+506|C:rhythm_edit
+507|S > D:reverb > C:mix
+508|G
+509|GS > C:mix
+510|S > D:pitch > C:mix
+511|S > D:volume > C:mix
+512|G
+513|S > C:loop > C:insert
+514|G
+515|S > C:retime_events > C:mix
+516|C:reorder || C:reorder
+517|S > GS > C:mix
+518|C:voice_conversion
+519|C:prosody_transfer
+520|C:channel_matching
+521|G
+522|GS > C:mix
+523|D:pitch || D:pitch
+524|S > C:dereverb > C:mix || S > C:harmonize > D:reverb > C:mix
+525|S > D:mute > C:mix
+526|S
+527|S > G > C:mix > G
+528|S > D:volume > C:mix
+529|S > C:compress > C:mix
+530|GS > C:mix
+531|D:eq > C:add_noise
+532|GS > C:insert || D:reverb
+533|S > G > C:mix
+534|S > GS > C:mix || C:speech_translation
+535|C:voice_conversion
+536|C:rhythm_edit
+537|GS > C:mix
+538|C:timbre_transfer
+539|S > C:voice_conversion > C:mix
+540|C:dereverb
+541|G
+542|S > D:mute > C:mix
+543|D:cut
+544|S > G > C:mix || GS > C:mix
+545|S > C:dereverb
+546|S > GS > C:mix > C:speech_translation
+547|S > C:insert
+548|C:transcribe_notes > C:singing_generation
+549|S > D:volume > C:mix || C:tts > C:mix
+550|S
+551|GS > C:mix
+552|S
+553|S
+554|GS > C:mix
+555|S
+556|G
+557|D:cut || G
+558|G || G
+559|G
+560|S
+561|C:rhythm_edit
+562|C:time_warp
+563|S > C:gain_automation > C:mix
+564|S
+565|D:mute > C:beep
+566|S > G > C:mix > S > D:volume > C:mix > S > D:speed > C:mix
+567|S > S > D:volume > C:mix
+568|G
+569|S > D:fade > D:volume > C:mix
+570|C:style_transfer > D:insert > C:crossfade
+571|G
+572|S
+573|D:eq
+574|D:cut
+575|C:voice_conversion
+576|S
+577|S > C:sample_replace > C:mix
+578|S > C:voice_conversion > C:mix
+579|S > S > C:mix > C:channel_matching
+580|S > S > S > C:mix
+581|S > D:volume > C:mix
+582|D:repeat
+583|D:cut
+584|S > G > C:mix
+585|G
+586|S > C:singing_edit > C:mix
+587|D:volume
+588|S
+589|G
+590|D:speed
+591|S
+592|S > D:volume > C:mix
+593|S
+594|S > D:volume > C:mix
+595|S
+596|S > GS > C:mix
+597|S
+598|S > G > C:mix
+599|S
+600|GS > C:mix
+601|S
+602|GS > C:mix
+603|S
+604|S
+605|G
+606|S
+607|D:speed
+608|S
+609|S > D:reverb > C:mix
+610|G
+611|S > D:reverb > C:mix
+612|S > D:eq > C:mix
+613|S
+614|S
+615|GS > C:insert
+616|S
+617|G
+618|S > D:pitch > C:mix
+619|GS > C:insert
+620|D:cut
+621|G
+622|S > GS > C:mix
+623|GS > C:insert
+624|S
+625|S > D:volume > C:mix
+626|S > D:fade > C:mix
+627|S > D:volume > C:mix
+628|S > D:volume > C:mix
+629|GS > C:mix
+630|GS > C:mix
+631|D:reverb
+632|GS > C:mix > G
+633|GS > C:mix
+634|S
+635|D:cut
+636|D:stretch_span
+637|S > D:volume > C:mix
+638|GS > C:mix
+639|S > GS > C:mix
+640|D:cut
+641|GS > C:mix > GS > C:mix
+642|D:mute || GS > C:mix
+643|GS > C:mix > GS > C:insert
+644|S > D:volume > C:mix
+645|D:mute
+646|S > D:volume
+647|GS > D:eq > C:mix > C:tts > C:mix
+648|D:cut || D:pitch
+649|GS > C:mix
+650|GS > C:mix > GS > C:insert
+651|S > GS > C:mix
+652|D:stretch_span
+653|S || D:reverb
+654|S > D:speed > GS > C:mix
+655|S > GS > C:mix || GS > C:mix
+656|S > D:volume > C:mix > S > D:volume > C:mix
+657|D:insert > C:crossfade
+658|D:cut || G
+659|S || G
+660|S || D:reverb
+661|C:add_noise
+662|D:volume > D:mix
+663|S > GS > C:mix || D:fade > C:mix
+664|D:cut
+665|GS > C:mix
+666|GS > C:mix
+667|S > D:eq > C:mix
+668|S > GS > C:mix || D:reverb > C:mix
+669|S
+670|G
+671|GS > C:mix > GS > C:mix
+672|G
+673|S > D:volume > C:mix
+674|S > D:volume > C:mix
+675|S > D:volume > D:eq > C:mix
+676|S > D:volume > C:mix
+677|GS > C:mix
+678|GS > C:mix
+679|D:mix
+680|D:mix
+681|D:insert
+682|S > C:voice_conversion > C:mix
+683|S > D:mix
+684|S > C:style_transfer > C:mix
+685|G
+686|S
+687|G
+688|D:fade
+689|S
+690|D:mute > C:beep
+691|S
+692|S
+693|G
+694|D:volume
+695|G
+696|G
+697|S
+698|GS > C:mix
+699|G
+700|G
+701|GS > C:mix
+702|S > C:singing_edit > C:mix
+703|S > D:pitch > C:mix
+704|D:speed
+705|D:eq > C:add_noise
+706|GS > C:mix
+707|S
+708|S || S
+709|S > C:distortion > C:mix
+710|C:tts > C:insert || D:repeat
+711|S > GS > C:mix
+712|S
+713|S
+714|S > D:speed > C:mix
+715|S
+716|G
+717|G
+718|S || G
+719|S > GS > C:mix
+720|D:mix
+721|C:reorder
+722|G
+723|G || G
+724|D:cut > S || G
+725|C:voice_conversion
+726|S > D:volume > C:mix > S > D:volume > C:mix
+727|D:speed
+728|GS > C:mix
+729|S
+730|S || D:cut
+731|G
+732|S || G
+733|S > D:volume > C:mix > G
+734|S > G > C:mix
+735|GS > C:mix
+736|D:cut > C:mix
+737|G || C:accompaniment_generation > C:mix
+738|D:pitch || G
+739|C:reorder
+740|S
+741|D:cut || S
+742|S > C:accompaniment_generation > C:mix
+743|S > D:speed > C:mix
+744|G
+745|S > D:speed > C:mix > S > D:volume > C:mix > S > D:volume > C:mix
+746|S > C:singing_edit > C:mix
+747|S > GS > C:mix > G
+748|G
+749|S > C:singing_edit > C:mix

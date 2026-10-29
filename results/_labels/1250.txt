@@ -1,0 +1,250 @@
+1250|G
+1251|G
+1252|D:speed
+1253|D:reverse
+1254|S
+1255|S
+1256|S
+1257|S
+1258|C:voice_conversion
+1259|D:speed
+1260|G
+1261|S
+1262|C:reorder
+1263|S
+1264|S
+1265|S
+1266|S
+1267|S
+1268|G
+1269|C:voice_conversion
+1270|G
+1271|S > GS > C:mix
+1272|G
+1273|G
+1274|C:prosody_transfer
+1275|GS
+1276|S
+1277|S
+1278|G
+1279|S
+1280|S
+1281|G
+1282|G
+1283|G > S
+1284|C:reorder || C:reorder
+1285|C:reorder
+1286|S
+1287|S > C:loop > C:insert
+1288|S > C:loop > C:insert
+1289|S > S > C:mix
+1290|S > C:mix
+1291|S > D:cut
+1292|S
+1293|S
+1294|S
+1295|S
+1296|S
+1297|S
+1298|S
+1299|S
+1300|C:voice_conversion
+1301|C:voice_conversion
+1302|C:voice_conversion
+1303|S
+1304|S
+1305|S > S > C:mix
+1306|S > S > C:mix
+1307|G
+1308|G
+1309|G
+1310|G
+1311|S > C:dereverb
+1312|S
+1313|G
+1314|G
+1315|C:reorder
+1316|G
+1317|S > D:speed > C:mix
+1318|G
+1319|C:reorder
+1320|C:reorder
+1321|C:voice_conversion
+1322|C:voice_conversion
+1323|C:reorder
+1324|D:stretch_span
+1325|S > G > C:mix
+1326|G
+1327|S > D:cut > C:mix
+1328|G
+1329|G > D:stretch_span
+1330|D:stretch_span
+1331|S > C:singing_edit > C:mix
+1332|C:reorder
+1333|C:reorder
+1334|C:reorder
+1335|C:reorder
+1336|S > G
+1337|S || G
+1338|S || S
+1339|S || S
+1340|S || C:inpaint
+1341|S || S
+1342|S || S
+1343|S
+1344|S
+1345|S || D:reverb
+1346|S
+1347|S
+1348|S
+1349|D:mute > C:beep
+1350|S
+1351|S
+1352|S
+1353|S
+1354|S
+1355|S
+1356|S
+1357|S || G
+1358|G
+1359|D:cut || G
+1360|C:speech_translation
+1361|S
+1362|S
+1363|S
+1364|S
+1365|S
+1366|D:cut
+1367|C:voice_conversion
+1368|S
+1369|C:beep
+1370|S > G
+1371|S
+1372|S
+1373|S > C:dereverb > C:bandwidth_extension
+1374|S
+1375|S || G
+1376|S
+1377|S
+1378|S
+1379|S
+1380|S
+1381|S > G
+1382|S
+1383|G || C:dereverb
+1384|G
+1385|S
+1386|G
+1387|G
+1388|S > C:dereverb > C:bandwidth_extension
+1389|S || G > C:mix
+1390|S
+1391|C:dereverb > G
+1392|G
+1393|S > G
+1394|S > C:dereverb > C:mix
+1395|D:mute
+1396|D:cut
+1397|S
+1398|G
+1399|S > D:cut
+1400|S > D:volume > C:mix
+1401|S
+1402|G
+1403|C:voice_clone_tts
+1404|G
+1405|S
+1406|G
+1407|G
+1408|S
+1409|S > D:cut > C:mix
+1410|G
+1411|C:speech_translation
+1412|S
+1413|S
+1414|G
+1415|S
+1416|S
+1417|G
+1418|D:cut
+1419|C:dereverb > G
+1420|G
+1421|G > D:reverb
+1422|G
+1423|S
+1424|S > D:cut
+1425|G
+1426|S
+1427|S
+1428|G > S
+1429|D:cut > S
+1430|G
+1431|S
+1432|D:cut
+1433|S > D:pitch > D:fade > C:mix
+1434|S
+1435|D:cut
+1436|GS > C:mix
+1437|G
+1438|G
+1439|D:speed
+1440|D:cut
+1441|C:speech_translation
+1442|S
+1443|S
+1444|S
+1445|S
+1446|S
+1447|S > GS > C:mix
+1448|G
+1449|G
+1450|S > D:volume > C:mix > S
+1451|S > S > D:pitch > C:timbre_transfer > C:mix
+1452|G
+1453|G
+1454|S > D:reverb
+1455|C:granular > D:eq > S > D:volume > C:mix
+1456|G
+1457|C:accent_transfer
+1458|G
+1459|S
+1460|S
+1461|S > GS > C:mix
+1462|S > C:sample_replace > C:mix
+1463|S
+1464|G
+1465|S
+1466|D:fade
+1467|D:insert
+1468|S > D:volume > C:mix
+1469|S > GS > C:mix
+1470|S > D:pitch
+1471|C:accompaniment_generation > C:mix
+1472|S > C:singing_edit > C:mix > D:pitch
+1473|S
+1474|C:accompaniment_generation > C:mix
+1475|G || G
+1476|C:tts > C:insert > S > S > G > C:mix
+1477|S > S
+1478|S > D:volume > C:mix > D:stretch_span
+1479|S > G
+1480|S > S > S > C:dereverb > D:volume > C:mix
+1481|S > D:normalize
+1482|S > C:singing_edit > C:mix
+1483|S > G > C:mix > S > D:volume > C:mix > C:tts > C:mix
+1484|G
+1485|S
+1486|C:accompaniment_generation > C:mix
+1487|G
+1488|D:cut
+1489|S
+1490|S > GS > C:mix
+1491|S > G > C:mix > GS > C:mix
+1492|S
+1493|S > D:pitch > C:mix
+1494|S > C:voice_conversion > C:mix
+1495|S > GS > C:mix
+1496|S > D:volume > C:mix
+1497|S > S > D:speed
+1498|C:retime_events
+1499|S

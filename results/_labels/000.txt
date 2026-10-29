@@ -1,0 +1,250 @@
+0|S
+1|C:add_chord_tone
+2|S > C:speech_translation
+3|C:reorder
+4|S
+5|G > D:speed
+6|S
+7|D:volume
+8|G
+9|S > D:volume > C:mix
+10|G
+11|C:reorder
+12|GS > C:mix > S > G
+13|G
+14|G
+15|G > S > S > D:volume > C:mix
+16|S
+17|G
+18|S
+19|D:volume
+20|S > C:mix
+21|S
+22|D:cut
+23|S > C:mix || S > C:mix
+24|D:speed
+25|G
+26|G
+27|C:reorder
+28|S || GS > C:mix
+29|S
+30|S > GS > C:mix > C:reorder
+31|S
+32|S > C:loop > C:mix
+33|S > D:speed > C:mix > G > S > D:volume > C:mix
+34|G
+35|GS > C:mix > S > D:volume > C:mix
+36|S
+37|S
+38|GS > C:mix || D:cut
+39|D:speed
+40|C:voice_conversion
+41|S > C:dereverb
+42|G
+43|GS > C:mix
+44|D:speed
+45|S
+46|GS > C:mix
+47|D:speed
+48|S > GS > C:mix
+49|GS > C:mix
+50|S
+51|D:cut
+52|GS > C:mix || D:volume
+53|S || GS > C:mix
+54|S
+55|S || GS > C:mix
+56|D:insert
+57|D:cut
+58|S > GS > C:mix || S > D:volume > C:mix
+59|GS > C:mix
+60|C:tts > C:mix || D:volume
+61|G
+62|G
+63|G
+64|G
+65|S
+66|S
+67|S > D:volume > C:mix
+68|S
+69|D:volume
+70|S > C:mix > S > D:volume > C:mix > GS > C:mix
+71|S > C:mix
+72|S
+73|D:repeat
+74|S > GS > C:mix
+75|S > D:volume > C:mix
+76|C:voice_conversion
+77|D:speed
+78|D:insert > C:crossfade
+79|S
+80|S
+81|G
+82|S
+83|C:voice_conversion > D:mix
+84|S > D:speed > C:mix
+85|D:eq
+86|S
+87|G
+88|G > S > GS > C:mix
+89|G
+90|S
+91|S
+92|G
+93|C:voice_conversion
+94|G
+95|S > D:cut
+96|G
+97|S
+98|S
+99|S
+100|S
+101|S
+102|D:speed
+103|G
+104|S
+105|S > D:volume > C:mix
+106|S
+107|S > D:speed > C:mix > S > D:fade > C:mix
+108|S > D:volume > C:mix
+109|D:eq > D:reverb
+110|S > C:retime_events > C:mix
+111|G
+112|S
+113|S > C:layer_copies > C:mix
+114|S > D:speed > C:mix
+115|S > D:cut
+116|S
+117|GS > C:mix > S > D:speed > C:mix > C:tts > C:insert || S > D:speed > C:mix
+118|G
+119|G
+120|G || G
+121|D:eq > C:add_noise
+122|S > C:mix > GS > C:mix
+123|S > D:volume > C:mix > G
+124|S > D:cut
+125|S > G > C:mix || C:revert
+126|S > D:speed > C:mix > GS > C:mix
+127|G
+128|G
+129|S > D:volume > C:mix > GS > C:mix
+130|C:voice_conversion
+131|S
+132|S > GS > C:mix
+133|S
+134|GS > C:mix > S > D:volume > C:mix || D:mute > C:mix
+135|G
+136|D:eq > D:reverb
+137|S || C:revert
+138|S > D:cut
+139|D:cut
+140|C:voice_conversion
+141|S > S > D:volume > C:mix > G
+142|G > S
+143|C:prosody_transfer
+144|G
+145|S > GS > C:mix > S > D:volume > C:mix || S > D:volume > C:mix > D:fade
+146|D:cut > S > S > D:volume > C:mix
+147|GS > C:mix > S > C:dereverb > C:mix || D:mute > C:mix
+148|S || C:revert
+149|S > C:mix
+150|D:speed > S || D:speed
+151|D:insert > C:crossfade
+152|S || C:revert
+153|S > S > C:mix
+154|D:reverb > D:eq || C:revert > D:reverb > D:eq
+155|D:mix
+156|S > S > D:volume > C:mix
+157|C:voice_conversion
+158|C:style_transfer
+159|S > GS > C:mix
+160|D:mix
+161|G
+162|G
+163|S
+164|D:cut
+165|G
+166|G
+167|S
+168|S
+169|D:speed
+170|C:speech_translation
+171|G
+172|D:cut
+173|C:speech_translation
+174|G
+175|G
+176|G
+177|D:speed
+178|S
+179|G
+180|S
+181|G
+182|G
+183|G
+184|S > G
+185|D:speed
+186|S
+187|G
+188|GS > C:insert
+189|S > D:volume > C:mix > S > D:volume > C:mix
+190|D:mute > C:beep
+191|G
+192|GS > C:mix
+193|G
+194|S > S > GS > C:mix
+195|S > GS > C:mix
+196|S > GS > C:mix
+197|S
+198|S
+199|S
+200|G
+201|GS > C:insert
+202|G
+203|S > D:volume > C:mix > S > D:volume > C:mix
+204|C:accompaniment_generation > C:mix
+205|D:mute > C:beep > S > D:cut > C:mix > GS > C:mix
+206|S > D:fade > C:mix
+207|S
+208|GS > C:insert
+209|D:speed
+210|S > D:cut
+211|G
+212|G
+213|S > C:singing_edit > C:mix
+214|S
+215|G
+216|S > D:volume > C:mix > G
+217|D:speed > D:volume || D:speed > D:volume
+218|D:volume > S > D:fade > C:mix || D:volume > G
+219|S > D:volume > C:mix
+220|S || GS > C:mix
+221|S
+222|S > D:speed > D:fade > C:mix || S > D:stretch_span > D:fade > C:mix
+223|S > C:singing_edit > C:mix || C:revert > D:volume
+224|C:reorder || C:reorder
+225|S
+226|S > GS > C:mix || C:layer_copies > C:mix
+227|C:timbre_transfer
+228|G > GS > C:mix
+229|S > D:volume > C:mix > G
+230|S > C:voice_conversion > C:mix
+231|S > C:singing_edit > C:mix
+232|D:cut
+233|G
+234|S > D:cut
+235|G
+236|S > C:voice_conversion > C:mix
+237|G
+238|D:cut
+239|D:cut
+240|G
+241|GS > C:mix
+242|D:cut || C:revert > S > D:volume > C:mix
+243|GS > C:insert
+244|G > GS > C:mix > GS > C:mix
+245|C:voice_conversion > S > D:volume > C:mix
+246|S > C:voice_conversion > C:mix
+247|S > D:cut
+248|D:speed > S > C:mix
+249|S

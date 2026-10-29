@@ -1,0 +1,250 @@
+1750|C:reorder
+1751|S > GS > C:mix
+1752|S || C:revert
+1753|S || C:revert
+1754|G
+1755|D:volume > D:insert
+1756|D:volume
+1757|S > D:volume > C:mix > GS > C:mix > GS > C:mix
+1758|D:repeat
+1759|S > C:tts > C:mix > GS > C:mix
+1760|S
+1761|D:pitch || C:revert > D:speed
+1762|D:volume > C:voice_clone_tts > GS > C:mix > C:insert
+1763|C:reorder
+1764|S > S || S > C:mix > C:voice_clone_tts > C:insert
+1765|G
+1766|G
+1767|S > D:volume > C:mix || C:revert
+1768|C:voice_clone_tts > C:insert
+1769|GS > C:mix
+1770|S || C:revert > S > D:volume > C:mix
+1771|D:cut
+1772|C:voice_conversion > S > D:volume > C:mix
+1773|D:stretch_span
+1774|D:cut
+1775|GS > C:mix || C:revert > D:pitch
+1776|C:voice_conversion
+1777|G
+1778|G > S > D:volume > C:mix
+1779|S
+1780|D:insert > S > D:volume > C:mix > S > D:speed > C:mix
+1781|D:cut
+1782|D:speed > D:insert
+1783|GS > C:insert > S > D:pitch > C:mix > C:tts > C:insert
+1784|D:eq
+1785|S > D:volume > C:mix
+1786|S > G > C:mix > S > C:retime_events > C:mix
+1787|S > D:volume > C:mix
+1788|D:insert > C:speech_translation
+1789|S > C:layer_copies > C:mix > S > D:volume > C:mix
+1790|S > G > C:mix
+1791|D:pitch
+1792|S > D:volume > C:mix > S > D:volume > C:mix
+1793|S > D:volume > C:mix
+1794|C:reorder > S
+1795|D:insert > D:speed
+1796|S
+1797|S > GS > C:mix
+1798|S > D:volume > C:mix
+1799|D:cut > D:insert
+1800|S
+1801|D:speed
+1802|G
+1803|G
+1804|S > S
+1805|S
+1806|S
+1807|G
+1808|S
+1809|S
+1810|G
+1811|G
+1812|G
+1813|G
+1814|D:cut
+1815|S > G > C:mix
+1816|G
+1817|C:speech_translation
+1818|G
+1819|G
+1820|S
+1821|S > G > C:mix
+1822|G
+1823|C:voice_conversion
+1824|S
+1825|G || C:revert
+1826|G
+1827|S
+1828|S
+1829|S
+1830|S
+1831|C:accompaniment_generation > C:mix
+1832|C:voice_conversion
+1833|S
+1834|GS > C:mix
+1835|S > C:layer_copies > C:mix
+1836|S
+1837|G
+1838|S > G > C:mix
+1839|GS > C:mix
+1840|S > GS > C:mix
+1841|S > G > C:mix
+1842|S > GS > C:mix || C:revert
+1843|G
+1844|S
+1845|S > C:sample_replace > C:mix
+1846|GS > C:mix
+1847|D:cut
+1848|S > GS > C:mix || S
+1849|S > G > C:mix
+1850|GS > C:mix
+1851|D:pitch
+1852|S > GS > C:mix
+1853|GS > C:mix
+1854|D:cut
+1855|S || S
+1856|D:cut
+1857|G
+1858|D:cut
+1859|C:voice_conversion
+1860|G
+1861|D:volume
+1862|C:timbre_transfer
+1863|S
+1864|D:volume
+1865|GS > C:mix
+1866|D:volume
+1867|S
+1868|D:cut
+1869|D:cut
+1870|G
+1871|GS > C:mix
+1872|S
+1873|S
+1874|D:fade
+1875|S > D:volume > C:mix
+1876|S
+1877|S || S
+1878|D:cut || S
+1879|S
+1880|S > C:singing_edit > C:mix
+1881|S
+1882|S > C:retime_events > C:mix
+1883|S > D:volume > C:mix
+1884|D:fade
+1885|S
+1886|C:voice_conversion
+1887|S
+1888|GS > C:mix
+1889|S > C:retime_events > C:mix
+1890|D:cut || S
+1891|S > G > C:mix
+1892|S
+1893|C:voice_conversion
+1894|S
+1895|S > D:volume > C:mix
+1896|S
+1897|S > C:singing_edit > C:mix
+1898|C:voice_conversion
+1899|C:voice_conversion
+1900|GS > C:mix
+1901|S > D:pitch > C:mix > GS > C:insert
+1902|C:voice_clone_tts > C:mix
+1903|S
+1904|S
+1905|GS > C:mix > GS > C:mix
+1906|C:voice_clone_tts > C:mix
+1907|S
+1908|C:speech_translation > S > C:pitch_curve > C:mix
+1909|C:reorder
+1910|S
+1911|S || C:speech_to_singing
+1912|S > GS > C:mix
+1913|S > C:speech_to_rap > C:mix || S
+1914|S > C:mix
+1915|S > GS > C:mix
+1916|S > C:timbre_transfer > C:mix
+1917|C:accompaniment_generation > C:mix > GS > C:mix
+1918|G > D:eq
+1919|G > S > D:mute > C:mix
+1920|S
+1921|S > C:transient_shaper > C:mix > GS > C:insert
+1922|G || C:revert
+1923|G
+1924|C:time_align > D:mix
+1925|GS > C:mix
+1926|S
+1927|S > GS > C:mix
+1928|G
+1929|G || G
+1930|C:time_warp
+1931|G || GS > C:mix
+1932|S > C:pitch_curve > C:mix || S > GS > C:mix
+1933|S
+1934|S > S > C:mix
+1935|G
+1936|G
+1937|S > S > C:mix
+1938|G
+1939|S || G
+1940|S
+1941|S > GS > C:mix
+1942|G
+1943|D:speed
+1944|C:voice_clone_tts
+1945|C:channel_matching
+1946|GS > C:mix
+1947|S > C:distortion > C:mix
+1948|D:mix
+1949|G
+1950|S > GS > C:mix
+1951|S > C:doppler > C:mix
+1952|S
+1953|D:cut
+1954|S
+1955|S > GS > C:mix
+1956|C:dereverb
+1957|G
+1958|S
+1959|S
+1960|C:voice_conversion
+1961|S > D:pitch > C:mix
+1962|GS > C:mix > D:mute > C:tts > C:insert
+1963|C:accompaniment_generation > C:mix
+1964|C:voice_conversion
+1965|G
+1966|S || GS > C:insert
+1967|S
+1968|S > C:sidechain > C:mix
+1969|G
+1970|D:speed
+1971|C:accompaniment_generation > C:mix
+1972|G
+1973|G
+1974|S
+1975|D:eq > D:reverb
+1976|G
+1977|S > C:tts > C:mix
+1978|S > C:sample_replace > C:mix
+1979|S > C:harmonize > C:mix
+1980|C:timbre_transfer
+1981|S > D:reverb > C:mix
+1982|G
+1983|C:continuation
+1984|S > C:sample_replace > C:mix
+1985|S
+1986|S > C:extend_tail > C:mix
+1987|S > D:volume > C:mix
+1988|S
+1989|G
+1990|D:eq
+1991|S > GS > C:mix || C:distortion
+1992|C:sample_replace
+1993|D:eq > C:add_noise
+1994|S
+1995|S
+1996|S > C:retime_events > C:mix
+1997|GS > C:mix || C:tts > C:mix
+1998|S
+1999|D:mute > C:beep

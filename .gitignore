@@ -1,0 +1,8 @@
+.venv/
+data/MMAE_data/
+data/download.log
+runs/
+__pycache__/
+.DS_Store
+*.csv
+!results/mmae_action_sequences.csv
